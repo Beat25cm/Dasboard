@@ -3,20 +3,7 @@
 <html>
   <head>
 
-    <header class="header">
-      <div class="container">
-      <div class="btn-menu">
-        <label for="btn-menu">☰</label>
-      </div>
-        <div class="logo">
-          
-        </div>
-        <nav class="menu">
-          <a href="#">Nosotros</a>
-          <a href="#">Contacto</a>
-        </nav>
-      </div>
-    </header>
+
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -79,29 +66,12 @@
     </p>
   </div>
   -->
-  <div class="capa"></div>
-  <!--	--------------->
-  <input type="checkbox" id="btn-menu">
-  <div class="container-menu">
-    <div class="cont-menu">
-      <nav>
-        <a href="#">graficas mensual</a>
-      </nav>
-  
-      <div id="authentication-bar" style="display: none;">
-        <p><span id="authentication-status"></span>
-           <span id="user-details"></span>
-           <a href="/" id="logout-link"><i class="fa-solid fa-right-from-bracket"></i></a>
-        </p>
-      </div>
-  
-      <label for="btn-menu">✖️</label>
-    </div>
-  </div>
+ 
 
 
   <!--LOGIN FORM-->
   <form id="login-form" style="display: none;">
+    
     <div class="form-elements-container">
       <label for="input-email"><b>Email</b></label>
       <input type="text" placeholder="Enter Username" id="input-email" required>
@@ -116,6 +86,20 @@
 
   <!--CONTENT (SENSOR READINGS)-->
   <div class="content-sign-in" id="content-sign-in">
+    <header class="header">
+      <div class="container">
+      <div class="btn-menu">
+        <label for="btn-menu">☰</label>
+      </div>
+        <div class="logo">
+          
+        </div>
+        <nav class="menu">
+          <a href="#">Nosotros</a>
+          <a href="#">Contacto</a>
+        </nav>
+      </div>
+    </header>
     <div class="cards">
       <!--LED-->
       <div class="card card-switch\"><h4><i class="fas fa-lightbulb\"></i>LED</h4><label class="switch"><input type="checkbox" onchange="toggleLed(this);" id="led"><span class="slider"></span></label></div>            
@@ -145,7 +129,25 @@
     </div>
      
     <!--CHARTS-->
-
+    <div class="capa"></div>
+    <!--	--------------->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+      <div class="cont-menu">
+        <nav>
+          <a href="#">graficas mensual</a>
+        </nav>
+    
+        <div id="authentication-bar" style="display: none;">
+          <p><span id="authentication-status"></span>
+             <span id="user-details"></span>
+             <a href="/" id="logout-link"><i class="fa-solid fa-right-from-bracket"></i></a>
+          </p>
+        </div>
+    
+        <label for="btn-menu">✖️</label>
+      </div>
+    </div>
 
 
   <script src="scripts/index.js"></script>
